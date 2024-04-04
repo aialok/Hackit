@@ -16,14 +16,14 @@ const Register = () => {
   const dispatch = useDispatch();
   const userRegister = useSelector((state) => state.userRegister);
   const { loading, success, error } = userRegister;
-  const userLogin = useSelector((state)=>state.userLogin)
-  const {hackUser} = userLogin
+  const userLogin = useSelector((state) => state.userLogin);
+  const { hackUser } = userLogin;
   const navigate = useNavigate();
   const handleSignup = () => {
     dispatch(userRegisterRequest(name, email, password));
-    setEmail('')
-    setName('')
-    setPassword('')
+    setEmail("");
+    setName("");
+    setPassword("");
   };
 
   useEffect(() => {

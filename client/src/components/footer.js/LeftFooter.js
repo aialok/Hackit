@@ -1,5 +1,5 @@
-import hackers from "../../assets/Hackers.svg";
-import devdungeon from "../../assets/devdungeon.png";
+// import hackers from "../../assets/Hackers.svg";
+// import devdungeon from "../../assets/devdungeon.png";
 import logo from '../../assets/QUASARLogoFinal.png';
 const LeftFooter = () => {
   return (

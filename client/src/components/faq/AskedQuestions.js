@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Collapse } from "react-collapse";
+// import { Collapse } from "react-collapse";
 import { IoIosArrowDown } from "react-icons/io";
 
 const AskedQuestions = () => {

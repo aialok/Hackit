@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import astro from "../../assets/astro.png";
 import ClockComp from "./ClockComp";
-import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-const Hero = ({ customVariants, setCustomVariants }) => {
-  const [mousePosition, setMousePosition] = useState({
+const Hero = ({ setCustomVariants }) => {
+  const [setMousePosition] = useState({
     x: 0,
     y: 0,
   });
@@ -22,23 +21,23 @@ const Hero = ({ customVariants, setCustomVariants }) => {
     return () => window.removeEventListener("mousemove", onMouseMove);
   }, []);
 
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-      transition: {
-        type: "tween",
-      },
-    },
-    text: {
-      width: 100,
-      height: 100,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundColor: "green",
-      mixBlendMode: "difference",
-    },
-  };
+  // const variants = {
+  //   default: {
+  //     x: mousePosition.x - 16,
+  //     y: mousePosition.y - 16,
+  //     transition: {
+  //       type: "tween",
+  //     },
+  //   },
+  //   text: {
+  //     width: 100,
+  //     height: 100,
+  //     x: mousePosition.x - 75,
+  //     y: mousePosition.y - 75,
+  //     backgroundColor: "green",
+  //     mixBlendMode: "difference",
+  //   },
+  // };
 
   const astroVariants = {
     astro: {
@@ -88,7 +87,7 @@ const Hero = ({ customVariants, setCustomVariants }) => {
         <Link
           target={"_blank"}
           to={
-            "https://docs.google.com/forms/d/1EnEe8BwXr02OoNXUTaDxRLSfLtY5MQaslG31Mw4ScbI/viewform"
+            "https://docs.google.com/forms/d/1hxyvgdz2lYVBfGhnJU1sCT58SQsG1fP7PSjfJeIfkw8/edit?ts=660efd2b"
           }
         >
           <button className="register_btn mt-4">

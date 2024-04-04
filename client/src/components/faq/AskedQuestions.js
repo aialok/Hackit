@@ -40,7 +40,7 @@ const AskedQuestions = () => {
     {
       question: "What is the registration procedure?",
       answer:
-        "Anyone who meets the conditions set for participating in this event can register on the official website of QUASAR till the last date i.e.  Apr.",
+        "Anyone who meets the conditions set for participating in this event can register on the official website of QUASAR till the last date i.e. 10th Apr.",
       id: 5,
     },
   ];

@@ -31,7 +31,12 @@ const RightFooter = () => {
         <Link to={"http://nas.io/devs-dungeon"} target="_blank">
           <BsWhatsapp className="mx-2 text-3xl text-[#25D366] cursor-pointer" />
         </Link>
-        <Link to={"https://www.linkedin.com/feed/update/urn:li:activity:7049339230203822081/"} target="_blank">
+        <Link
+          to={
+            "https://www.linkedin.com/feed/update/urn:li:activity:7049339230203822081/"
+          }
+          target="_blank"
+        >
           <BsLinkedin className="mx-2 text-3xl text-[#0077B5] cursor-pointer" />
         </Link>
       </div>

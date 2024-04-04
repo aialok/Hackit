@@ -7,8 +7,8 @@ const SideMiddle = () => {
 
       <div className="font-[Urbanist]">
         <p className="my-1">IIIT Ranchi</p>
-        <p className="my-1">Dhurwa ,Ranchi </p>
-        <p className="my-1">Jharkhand-834004</p>
+        <p className="my-1">JUT, Ranchi </p>
+        <p className="my-1">Jharkhand-834010</p>
       </div>
     </div>
   );

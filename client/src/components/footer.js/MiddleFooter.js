@@ -34,7 +34,7 @@ const MiddleFooter = () => {
           FAQ's
         </Link>
       </li>
-      <li className="list-none">
+      {/* <li className="list-none">
         <Link
           smooth
           to="#sponsor"
@@ -42,8 +42,8 @@ const MiddleFooter = () => {
         >
           Sponsors
         </Link>
-      </li>
-      <li className="list-none">
+      </li> */}
+      {/* <li className="list-none">
         <Link
           smooth
           target={"_blank"}
@@ -52,7 +52,7 @@ const MiddleFooter = () => {
         >
           Rules
         </Link>
-      </li>
+      </li> */}
     </div>
   );
 };

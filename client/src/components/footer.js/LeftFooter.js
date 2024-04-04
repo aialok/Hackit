@@ -11,13 +11,13 @@ const LeftFooter = () => {
           QUASAR
         </h2>
       </div>
-      <img className="max-w-[150px] mt-2" src={devdungeon} alt="" />
+      {/* <img className="max-w-[150px] mt-2" src={devdungeon} alt="" /> */}
 
-      <div>
+      {/* <div>
         <h2 className="text-slate-200 font-bold text-2xl mt-2 font-[Varela]">
           Dev Dungeon
         </h2>
-      </div>
+      </div> */}
     </div>
   );
 };

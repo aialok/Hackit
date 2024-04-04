@@ -1,5 +1,4 @@
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate, useParams } from "react-router-dom";
 import { userVerifyRequest } from "../../redux/actions.js/userAction";
@@ -10,13 +9,13 @@ const Verify = () => {
   const userRegister = useSelector((state) => state.userRegister);
   const { loading, hackUser, error } = userRegister;
   const dispatch = useDispatch();
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   useEffect(() => {
     dispatch(userVerifyRequest(email));
-    if(hackUser){
-      navigate('/')
+    if (hackUser) {
+      navigate("/");
     }
-  }, [dispatch,hackUser]);
+  }, [dispatch, hackUser]);
 
   return <div>{loading ? <Loader /> : <p className="mt-24">Verified</p>}</div>;
 };

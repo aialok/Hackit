@@ -1,4 +1,3 @@
-import about from "../../assets/Hackers.svg";
 const About = () => {
   return (
     <div

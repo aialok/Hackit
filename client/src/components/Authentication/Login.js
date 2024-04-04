@@ -4,7 +4,6 @@ import Lottie from "lottie-react";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Message from "../Message";
-import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { userLoginRequest } from "../../redux/actions.js/userAction";
 import Loader from "../Loader";
@@ -18,7 +17,7 @@ const Login = () => {
     dispatch(userLoginRequest(email, password));
   };
 
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   useEffect(() => {
     if (hackUser) {
       navigate("/");

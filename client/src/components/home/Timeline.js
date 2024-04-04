@@ -65,40 +65,11 @@ const Timeline = () => {
           icon={<IoIosSchool className="text-slate-100" />}
         >
           <h1 className="text-yellow-500 font-bold text-xl">
-            EVALUATION ROUND 1 
+            QUASAR MAIN EVENT
           </h1>
           <p>
-            The first round of evaluation will be done by our Judging Panel.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
-          date="20 Apr 11:00 PM"
-          iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
-          icon={<IoIosSchool className="text-slate-100" />}
-        >
-          <h1 className="text-yellow-500 font-bold text-xl">
-          EVALUATION ROUND 2
-          </h1>
-          <p >
-          The second round of evaluation will be done by our Judging Panel.
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
-          contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
-          date="21 Apr 11:00 AM"  
-          iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
-          icon={<IoIosSchool className="text-slate-100" />}
-        >
-          <h1 className="text-yellow-500 font-bold text-xl">
-          EVALUATION ROUND 3
-          </h1>
-          <p >
-          The third round of evaluation will be done by our Judging Panel.
+            QUASAR will be a two-day event consisting of various guest
+            lectures, workshops, and project evaluation.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement

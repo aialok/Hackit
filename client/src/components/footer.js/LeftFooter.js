@@ -8,7 +8,7 @@ const LeftFooter = () => {
 
       <div>
         <h2 className="text-slate-200 font-bold text-2xl mt-2 font-[Varela]">
-          HOUSE OF HACKERS
+          QUASAR
         </h2>
       </div>
       <img className="max-w-[150px] mt-2" src={devdungeon} alt="" />

@@ -76,16 +76,21 @@ const Hero = ({ customVariants, setCustomVariants }) => {
         </motion.div>
       </div>
 
-      <div className="bg-[rgba(26,21,5,0.6)] relative  w-[100%] h-[100vh] flex-col flex items-center justify-center">
+      <div className=" bg-[rgba(26,21,5,0.6)] relative  w-[100%] h-[100vh] flex-col flex items-center justify-center ">
         <span
           onMouseEnter={handleMouseEntered}
           onMouseLeave={handleMouseLeaved}
-          className="text-slate-100 text z-10"
+          className="hover-shadow text-slate-100 text z-10 hover:text-shadow-md"
         >
           QUASAR
         </span>
         <ClockComp setCustomVariants={setCustomVariants} />
-        <Link target={'_blank'} to={"https://hack2skill.com/hack/houseofhackers"}>
+        <Link
+          target={"_blank"}
+          to={
+            "https://docs.google.com/forms/d/1EnEe8BwXr02OoNXUTaDxRLSfLtY5MQaslG31Mw4ScbI/viewform"
+          }
+        >
           <button className="register_btn mt-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +107,7 @@ const Hero = ({ customVariants, setCustomVariants }) => {
             <span>Register Here</span>
           </button>
         </Link>
-        
+
         {/* <motion.div
           variants={variants}
           animate={customVariants}

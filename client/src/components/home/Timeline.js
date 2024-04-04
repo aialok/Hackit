@@ -17,61 +17,88 @@ const Timeline = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
-          date="26 Mar - 5 Apr"
+          date="20 Apr 10:00 AM - 20 Apr 11:00 AM"
           iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
           icon={<IoIosSchool className="text-slate-100" />}
         >
           <h1 className=" font-bold text-xl text-yellow-500">
-            REGISTRATION BEGINS
+            OPENING CEREMONY
           </h1>
           <p>
-            Registration opens up for students to register with their respective
-            teams and project ideas for Hackathon.
+            Opening ceremony will be started for the Hackathon.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
-          date="6 Apr - 8 Apr"
+          date="20 Apr 10:00 AM - 21 Apr 11:00 AM"
           iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
           icon={<IoIosSchool className="text-slate-100" />}
         >
-          <h1 className="text-yellow-500 font-bold text-xl">PHASE 1 RESULT</h1>
+          <h1 className="text-yellow-500 font-bold text-xl">HACK DAY</h1>
           <p>
-            Top 50 teams will be selected based on Idea submission for Round 2
+            Students will be given 24 hours to complete their projects.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
-          date="15 Apr - 17 Apr"
+          date="20 Apr 5:00 PM"
           iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
           icon={<IoIosSchool className="text-slate-100" />}
         >
           <h1 className="text-yellow-500 font-bold text-xl">
-            HOUSE OF HACKERS MAIN EVENT
+            EVALUATION ROUND 1 
           </h1>
           <p>
-            House of Hackers will be a two-day event consisting of various guest
-            lectures, workshops, and project evaluation.
+            The first round of evaluation will be done by our Judging Panel.
           </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
           contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
-          date="17 Apr"
+          date="20 Apr 11:00 PM"
           iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
           icon={<IoIosSchool className="text-slate-100" />}
         >
           <h1 className="text-yellow-500 font-bold text-xl">
-            RESULT DECLARATION
+          EVALUATION ROUND 2
           </h1>
           <p >
-            The ultimate hacker will be revealed by our Judging Panel on 17th
-            April 2023
+          The second round of evaluation will be done by our Judging Panel.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
+          date="21 Apr 11:00 AM"  
+          iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
+          icon={<IoIosSchool className="text-slate-100" />}
+        >
+          <h1 className="text-yellow-500 font-bold text-xl">
+          EVALUATION ROUND 3
+          </h1>
+          <p >
+          The third round of evaluation will be done by our Judging Panel.
+          </p>
+        </VerticalTimelineElement>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
+          date="21 Apr 12:00 PM"
+          iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
+          icon={<IoIosSchool className="text-slate-100" />}
+        >
+          <h1 className="text-yellow-500 font-bold text-xl">
+            CLOSING CEREMONY
+          </h1>
+          <p >
+            Closing ceremony for the hackathon will be started.
           </p>
         </VerticalTimelineElement>
       </VerticalTimeline>

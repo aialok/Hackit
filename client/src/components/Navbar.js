@@ -1,6 +1,7 @@
 import { BiMenuAltRight } from "react-icons/bi";
 import { useSelector } from "react-redux";
 import hackers from "../assets/Hackers.svg";
+import logo from "../assets/QUASARLogoFinal.png";
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HashLink as Link } from "react-router-hash-link";
@@ -32,7 +33,7 @@ const Navbar = () => {
     >
       <div className="flex justify-between items-center">
         <Link to={"/"}>
-          <img className="max-w-[120px]" src={hackers} alt="" />
+          <img className="max-w-[120px] w-20" src={logo} alt="" />
         </Link>
 
         <BiMenuAltRight
@@ -92,7 +93,7 @@ const Navbar = () => {
               FAQ's
             </Link>
           </li>
-          <li className={`${menuOpen && "my-3"}`}>
+          {/* <li className={`${menuOpen && "my-3"}`}>
             <Link
               onClick={() => setMenuOpen(false)}
               smooth
@@ -105,7 +106,7 @@ const Navbar = () => {
             >
               Sponsors
             </Link>
-          </li>
+          </li> */}
           <li className={`${menuOpen && "my-3"}`}>
             <Link
               onClick={() => setMenuOpen(false)}

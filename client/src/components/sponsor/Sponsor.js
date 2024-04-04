@@ -13,7 +13,7 @@ const Sponsor = () => {
             our hackathon will be conducted offline, students will be exposed to
             your quality products, which will lead to your growth
           </p>
-          <div className="flex justify-between items-center">
+          <div className="flex justify-center items-center">
             <a
               href="https://drive.google.com/file/d/10Ak9OOfcB7OTiMILPFNNHKiLjIZgYZKT/view"
               target="_blank"
@@ -22,14 +22,14 @@ const Sponsor = () => {
                 <b>View Brochure</b>
               </button>
             </a>
-            <a
+            {/* <a
               href="https://drive.google.com/file/d/1-uY5lQ_0he__Arlrs3vHrBlIQTl7MiqD/view"
               target="_blank"
             >
               <button className="fold-btn mt-4 ml-8 font-[Varela]">
                 <b>Code of Conduct</b>
               </button>
-            </a>
+            </a> */}
           </div>
         </div>
       </div>

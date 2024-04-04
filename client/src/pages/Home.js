@@ -25,7 +25,7 @@ const Home = () => {
       />
       <Sponsor />
       <Prize />
-      <Partners />
+      {/* <Partners /> */}
       <AskedQuestions />
       <Footer />
     </>

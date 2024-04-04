@@ -16,7 +16,7 @@ const AskedQuestions = () => {
     {
       question: "Can we register as a team?",
       answer:
-        "Sure you can register as a team and minimum two members are compulsory. The cap on the number of team members is limited to 4 per team.",
+        "Sure, you can register as a team. The cap on the number of team members is limited to exactly 4 per team.",
       id: 1,
     },
     {
@@ -40,7 +40,7 @@ const AskedQuestions = () => {
     {
       question: "What is the registration procedure?",
       answer:
-        "Anyone who meets the conditions set for participating in this event can register on the official website of QUASAR (https://houseofhackers.tech) till the last date i.e. 5 Apr.",
+        "Anyone who meets the conditions set for participating in this event can register on the official website of QUASAR till the last date i.e.  Apr.",
       id: 5,
     },
   ];

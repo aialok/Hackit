@@ -12,7 +12,7 @@ const CountdownPage = () => {
 
   let interval;
   const startTimer = () => {
-    const countDownDate = new Date("April 17,2023").getTime();
+    const countDownDate = new Date("April 20,2024").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -38,6 +38,7 @@ const CountdownPage = () => {
 
   useEffect(() => {
     startTimer();
+    console.log(timerDays)
   }, []);
     return (
         <div>

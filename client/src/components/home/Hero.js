@@ -82,7 +82,7 @@ const Hero = ({ customVariants, setCustomVariants }) => {
           onMouseLeave={handleMouseLeaved}
           className="text-slate-100 text z-10"
         >
-          HOUSE OF HACKERS
+          QUASAR
         </span>
         <ClockComp setCustomVariants={setCustomVariants} />
         <Link target={'_blank'} to={"https://hack2skill.com/hack/houseofhackers"}>

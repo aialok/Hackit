@@ -6,16 +6,17 @@ const About = () => {
       id="about"
     >
       <h1 className="text-center mb-8 font-[Varela] text-[#ee2a7b] font-bold text-5xl ">
-        About House Of Hackers
+        About QUASAR
       </h1>
       <div className="flex  items-center justify-center flex-col text-slate-100">
         <div className="md:w-[700px]  w-[100%]">
           <span className="my-2 text-lg">
-            House of Hackers is a competition where hackers from around the
-            country participate to solve a problem statement provided, to create
-            something unique which could be beneficial for society. It's one
-            part party, one part work overnight battle against the clock and the
-            competition.
+            Welcome to Quasar - The Ultimate Test of Innovation, creativity, and
+            problem-solving skills! Join us for an exhilarating 24-hour
+            hackathon organized by the esteemed technical society of IIIT
+            Ranchi, House of Geeks. Quasar is not just an event; it's an
+            opportunity for passionate minds to come together, collaborate, and
+            create something extraordinary.
           </span>
           <span className="block my-2 text-lg">
             We don't believe in keeping it bound to just software development

@@ -13,6 +13,21 @@ const Timeline = () => {
         TIMELINE
       </h1>
       <VerticalTimeline>
+      <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}
+          contentArrowStyle={{ borderRight: "7px solid  rgb(255,255,255,0.1)" }}
+          date="12 Apr - 13 Apr"  
+          iconStyle={{ background: "rgb(36,36,36,1)", color: "#fff" }}
+          icon={<IoIosSchool className="text-slate-100" />}
+        >
+          <h1 className="text-yellow-500 font-bold text-xl">
+          IDEATHON
+          </h1>
+          <p >
+          Respective teams will present their ideas to Judge Panel.
+          </p>
+        </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(255,255,255,0.1)", color: "#fff" }}

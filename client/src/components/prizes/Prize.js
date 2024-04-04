@@ -20,7 +20,7 @@ const Prize = () => {
     },
   ];
   return (
-    <div className="bg-[rgba(26,21,5,0.6)] relative py-10 md:px-20 sm:px-8 px-4  w-[100%] min-h-[70vh]">
+    <div id="prizes" className="bg-[rgba(26,21,5,0.6)] relative py-10 md:px-20 sm:px-8 px-4   w-[100%] min-h-[70vh]">
       <h1 className="text-center mb-8 font-[Varela] text-[#ee2a7b] font-bold text-5xl">
         Prizes
       </h1>

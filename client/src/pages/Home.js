@@ -9,6 +9,7 @@ import Timeline from "../components/home/Timeline";
 // import Partners from "../components/partners/Partners";
 import Prize from "../components/prizes/Prize";
 import Sponsor from "../components/sponsor/Sponsor";
+
 const Home = () => {
   const [customVariants, setCustomVariants] = useState("default");
 

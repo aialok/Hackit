@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import astro from "../../assets/astro.png";
 import ClockComp from "./ClockComp";
 import { Link } from "react-router-dom";
+import quasarLogo from "../../assets/quasar_logo.png";
 const Hero = ({ setCustomVariants }) => {
   const [setMousePosition] = useState({
     x: 0,
@@ -60,7 +61,18 @@ const Hero = ({ setCustomVariants }) => {
   const handleMouseLeaved = () => setCustomVariants("default");
   return (
     <>
-      <div className="w-[100%] h-[100vh] fixed bg-[url('./assets/bgSpace.avif')] bg-cover bg-no-repeat">
+      <div className="w-[100%] h-[100vh] fixed  bg-cover bg-no-repeat">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute z-[-1] w-auto min-w-full min-h-full max-w-fit brightness-150  contrast-150"
+        >
+          <source
+            src="https://res.cloudinary.com/dea8fwj6d/video/upload/v1712298875/quasar-video_rwe93i.mp4"
+            type="video/mp4"
+          />
+        </video>
         <motion.div
           initial={{ x: -200 }}
           variants={astroVariants}
@@ -68,7 +80,7 @@ const Hero = ({ setCustomVariants }) => {
           className="absolute top-10 left-10"
         >
           <img
-            className="md:max-w-[220px] fixed left-0 top-10 max-w-[150px] z-[-1]"
+            className="md:max-w-[220px] fixed left-0 top-10 max-w-[150px] z-20"
             src={astro}
             alt=""
           />
@@ -79,9 +91,14 @@ const Hero = ({ setCustomVariants }) => {
         <span
           onMouseEnter={handleMouseEntered}
           onMouseLeave={handleMouseLeaved}
-          className="hover-shadow text-slate-100 text z-10 hover:text-shadow-md"
+          className=" text-slate-100 text z-10 hover:text-shadow-md shasow"
         >
-          QUASAR
+          {/* QUASAR */}
+          <img
+            src={quasarLogo}
+            alt="quasar"
+            className="w-5/6 mx-auto transition duration-300 ease-in-out transform hover:shadow-lg"
+          />
         </span>
         <ClockComp setCustomVariants={setCustomVariants} />
         <Link

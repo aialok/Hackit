@@ -1,14 +1,13 @@
 import { BiMenuAltRight } from "react-icons/bi";
-import { useSelector } from "react-redux";
-import hackers from "../assets/Hackers.svg";
+// import { useSelector } from "react-redux";
+// import hackers from "../assets/Hackers.svg";
 import logo from "../assets/QUASARLogoFinal.png";
 import { useEffect, useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HashLink as Link } from "react-router-hash-link";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
-
   const [navbar, setNavbar] = useState("transparent");
   const [menuOpen, setMenuOpen] = useState(false);
   const { hash } = useLocation();
@@ -107,7 +106,7 @@ const Navbar = () => {
               Sponsors
             </Link>
           </li> */}
-           <li className={`${menuOpen && "my-3"}`}>
+          <li className={`${menuOpen && "my-3"}`}>
             <Link
               onClick={() => setMenuOpen(false)}
               smooth
@@ -121,11 +120,11 @@ const Navbar = () => {
               Prizes
             </Link>
           </li>
-          <li className={`${menuOpen && "my-3"}`}>
+          {/* <li className={`${menuOpen && "my-3"}`}>
             <Link
               onClick={() => setMenuOpen(false)}
               smooth
-              target={'_blank'}
+              target={"_blank"}
               to="https://drive.google.com/file/d/10QeDlV-XRIkiAAstKLLi1NQdTLksT-Gy/view"
               className={`${
                 hash === "#contact" ? "text-[#ee2a7b]" : "text-white"
@@ -135,7 +134,7 @@ const Navbar = () => {
             >
               Rules
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </div>

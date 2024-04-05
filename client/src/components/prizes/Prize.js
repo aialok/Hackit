@@ -25,7 +25,7 @@ const Prize = () => {
         Prizes
       </h1>
       <div className="w-full flex items-center justify-center">
-        <img className="rounded-lg" src={prizeBanner} alt="" />
+        {/* <img className="rounded-lg" src={prizeBanner} alt="" /> */}
       </div>
     </div>
   );

@@ -1,18 +1,17 @@
 import { useState } from "react";
-import Clock from "../components/home/Clock"
-import ClockComp from "../components/home/ClockComp"
+import Clock from "../components/home/Clock";
+// import ClockComp from "../components/home/ClockComp"
 import { useEffect } from "react";
 
 const CountdownPage = () => {
-
-    const [timerDays, setTimerDays] = useState();
+  const [timerDays, setTimerDays] = useState();
   const [timerHours, setTimerHours] = useState();
   const [timerMinutes, setTimerMinutes] = useState();
   const [timerSeconds, setTimerSeconds] = useState();
 
   let interval;
   const startTimer = () => {
-    const countDownDate = new Date("April 17,2023").getTime();
+    const countDownDate = new Date("April 20,2024").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -39,19 +38,18 @@ const CountdownPage = () => {
   useEffect(() => {
     startTimer();
   }, []);
-    return (
-        <div>
-            <div className="w-[100%] h-[100vh] count fixed  bg-cover bg-no-repeat">
-                <Clock
-                    timerDays={timerDays}
-                    timerHours={timerHours}
-                    timerMinutes={timerMinutes}
-                    timerSeconds={timerSeconds}
-                    countdown
-                />
-            </div>
-        </div>
-
-    )
-}
-export default CountdownPage
+  return (
+    <div>
+      <div className="w-[100%] h-[100vh] count fixed  bg-cover bg-no-repeat">
+        <Clock
+          timerDays={timerDays}
+          timerHours={timerHours}
+          timerMinutes={timerMinutes}
+          timerSeconds={timerSeconds}
+          countdown
+        />
+      </div>
+    </div>
+  );
+};
+export default CountdownPage;

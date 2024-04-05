@@ -9,7 +9,7 @@ const ClockComp = ({ setCustomVariants }) => {
 
   let interval;
   const startTimer = () => {
-    const countDownDate = new Date("April 16,2023").getTime();
+    const countDownDate = new Date("April 20,2024").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();
@@ -17,7 +17,7 @@ const ClockComp = ({ setCustomVariants }) => {
 
       const days = Math.floor(distance / (24 * 60 * 60 * 1000));
       const hours = Math.floor(
-        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60) - 10
+        (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
       );
       const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
@@ -29,16 +29,17 @@ const ClockComp = ({ setCustomVariants }) => {
         setTimerMinutes(0);
         setTimerSeconds(0);
       } else {
-        setTimerDays(0);
-        setTimerHours(0);
-        setTimerMinutes(0);
-        setTimerSeconds(0);
+        setTimerDays(days);
+        setTimerHours(hours);
+        setTimerMinutes(minutes);
+        setTimerSeconds(seconds);
       }
     });
   };
 
   useEffect(() => {
     startTimer();
+    console.log("Timer started");
   }, []);
 
   return (

@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import astro from "../../assets/astro.png";
 import ClockComp from "./ClockComp";
-import { BsArrowRight } from "react-icons/bs";
 import { Link } from "react-router-dom";
-const Hero = ({ customVariants, setCustomVariants }) => {
-  const [mousePosition, setMousePosition] = useState({
+const Hero = ({ setCustomVariants }) => {
+  const [setMousePosition] = useState({
     x: 0,
     y: 0,
   });
@@ -22,23 +21,23 @@ const Hero = ({ customVariants, setCustomVariants }) => {
     return () => window.removeEventListener("mousemove", onMouseMove);
   }, []);
 
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-      transition: {
-        type: "tween",
-      },
-    },
-    text: {
-      width: 100,
-      height: 100,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundColor: "green",
-      mixBlendMode: "difference",
-    },
-  };
+  // const variants = {
+  //   default: {
+  //     x: mousePosition.x - 16,
+  //     y: mousePosition.y - 16,
+  //     transition: {
+  //       type: "tween",
+  //     },
+  //   },
+  //   text: {
+  //     width: 100,
+  //     height: 100,
+  //     x: mousePosition.x - 75,
+  //     y: mousePosition.y - 75,
+  //     backgroundColor: "green",
+  //     mixBlendMode: "difference",
+  //   },
+  // };
 
   const astroVariants = {
     astro: {
@@ -76,16 +75,21 @@ const Hero = ({ customVariants, setCustomVariants }) => {
         </motion.div>
       </div>
 
-      <div className="bg-[rgba(26,21,5,0.6)] relative  w-[100%] h-[100vh] flex-col flex items-center justify-center">
+      <div className=" bg-[rgba(26,21,5,0.6)] relative  w-[100%] h-[100vh] flex-col flex items-center justify-center ">
         <span
           onMouseEnter={handleMouseEntered}
           onMouseLeave={handleMouseLeaved}
-          className="text-slate-100 text z-10"
+          className="hover-shadow text-slate-100 text z-10 hover:text-shadow-md"
         >
-          HOUSE OF HACKERS
+          QUASAR
         </span>
         <ClockComp setCustomVariants={setCustomVariants} />
-        <Link target={'_blank'} to={"https://hack2skill.com/hack/houseofhackers"}>
+        <Link
+          target={"_blank"}
+          to={
+            "https://docs.google.com/forms/d/1hxyvgdz2lYVBfGhnJU1sCT58SQsG1fP7PSjfJeIfkw8/edit?ts=660efd2b"
+          }
+        >
           <button className="register_btn mt-4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +106,7 @@ const Hero = ({ customVariants, setCustomVariants }) => {
             <span>Register Here</span>
           </button>
         </Link>
-        
+
         {/* <motion.div
           variants={variants}
           animate={customVariants}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Collapse } from "react-collapse";
+// import { Collapse } from "react-collapse";
 import { IoIosArrowDown } from "react-icons/io";
 
 const AskedQuestions = () => {
@@ -16,7 +16,7 @@ const AskedQuestions = () => {
     {
       question: "Can we register as a team?",
       answer:
-        "Sure you can register as a team and minimum two members are compulsory. The cap on the number of team members is limited to 4 per team.",
+        "Sure, you can register as a team. The cap on the number of team members is limited to exactly 4 per team.",
       id: 1,
     },
     {
@@ -28,7 +28,7 @@ const AskedQuestions = () => {
     {
       question: "Is it theme based event?",
       answer:
-        "The event focuses on participants solving the predefined problems which have been supplied to them via the brochure and through the website of House of Hackers. We want everyone to follow the problem statements only and choosing any other project other than that would lead to disqualifying the individual/team.",
+        "The event focuses on participants solving the predefined problems which have been supplied to them via the brochure and through the website of QUASAR. We want everyone to follow the problem statements only and choosing any other project other than that would lead to disqualifying the individual/team.",
       id: 3,
     },
     {
@@ -40,7 +40,7 @@ const AskedQuestions = () => {
     {
       question: "What is the registration procedure?",
       answer:
-        "Anyone who meets the conditions set for participating in this event can register on the official website of House of Hackers (https://houseofhackers.tech) till the last date i.e. 5 Apr.",
+        "Anyone who meets the conditions set for participating in this event can register on the official website of QUASAR till the last date i.e. 10th Apr.",
       id: 5,
     },
   ];

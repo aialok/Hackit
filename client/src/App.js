@@ -11,7 +11,9 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   const handleLoad = () => {
-    setLoading(false);
+    setTimeout(() => {
+      setLoading(false);
+    }, 2000);
   };
 
   const { pathname } = useLocation();
@@ -47,7 +49,7 @@ function App() {
           >
             <video
               autoPlay
-              className="min-w-full min-h-full object-cover"
+              className="min-w-full min-h-full brightness-150 contrast-150 object-cover"
               muted
               preload="auto"
               loop

@@ -4,7 +4,7 @@ import astro from "../../assets/astro.png";
 import ClockComp from "./ClockComp";
 import { Link } from "react-router-dom";
 const Hero = ({ setCustomVariants }) => {
-  const [setMousePosition] = useState({
+  const [mousePosition,setMousePosition] = useState({
     x: 0,
     y: 0,
   });

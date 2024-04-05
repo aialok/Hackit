@@ -81,6 +81,33 @@ const Navbar = () => {
           </li>
           <li className={`${menuOpen && "my-3"}`}>
             <Link
+              onClick={() => setMenuOpen(false)}
+              smooth
+              to="#prizes"
+              className={`${
+                hash === "#prizes" ? "text-[#ee2a7b]" : "text-white"
+              }  ${
+                menuOpen ? "text-3xl" : "text-xl "
+              } mx-6 hover:text-[#ee2a7b] transition-all`}
+            >
+              Prizes
+            </Link>
+          </li>
+          <li className={`${menuOpen && "my-3"}`}>
+            <a
+            target="_blank"
+            href="https://clumsy-hippodraco-dae.notion.site/Quasar-Problem-Statements-29a99e28d4be48b4b79bd4d6ebe81908"
+              onClick={() => setMenuOpen(false)}
+              className={` text-white
+              ${
+                menuOpen ? "text-3xl" : "text-xl "
+              } mx-6 hover:text-[#ee2a7b] transition-all`}
+            >
+              Problem Statements
+            </a>
+          </li>
+          <li className={`${menuOpen && "my-3"}`}>
+            <Link
               smooth
               onClick={() => setMenuOpen(false)}
               to="#faq"
@@ -93,6 +120,7 @@ const Navbar = () => {
               FAQ's
             </Link>
           </li>
+
           {/* <li className={`${menuOpen && "my-3"}`}>
             <Link
               onClick={() => setMenuOpen(false)}
@@ -107,20 +135,6 @@ const Navbar = () => {
               Sponsors
             </Link>
           </li> */}
-          <li className={`${menuOpen && "my-3"}`}>
-            <Link
-              onClick={() => setMenuOpen(false)}
-              smooth
-              to="#prizes"
-              className={`${
-                hash === "#prizes" ? "text-[#ee2a7b]" : "text-white"
-              }  ${
-                menuOpen ? "text-3xl" : "text-xl "
-              } mx-6 hover:text-[#ee2a7b] transition-all`}
-            >
-              Prizes
-            </Link>
-          </li>
           {/* <li className={`${menuOpen && "my-3"}`}>
             <Link
               onClick={() => setMenuOpen(false)}

@@ -60,7 +60,7 @@ const Hero = ({ setCustomVariants }) => {
   const handleMouseLeaved = () => setCustomVariants("default");
   return (
     <>
-      <div className="w-[100%] h-[100vh] fixed bg-[url('./assets/bgSpace.avif')] bg-cover bg-no-repeat">
+      <div className="w-[100%] h-[100vh] fixed">
         <motion.div
           initial={{ x: -200 }}
           variants={astroVariants}

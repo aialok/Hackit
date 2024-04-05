@@ -10,19 +10,20 @@ import { useLocation } from "react-router-dom";
 const Navbar = () => {
   const [navbar, setNavbar] = useState("transparent");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [currentHash, setCurrentHash] = useState("");
   const { hash } = useLocation();
   const handleScroll = () => {
     if (window.scrollY >= 64) {
       setNavbar("black");
     } else {
       setNavbar("transparent");
-      hash = "/";
+      setCurrentHash("");
     }
   };
 
   useEffect(() => {
-    console.log(hash);
-  }, [hash]);
+    console.log(currentHash);
+  }, [currentHash]);
 
   window.addEventListener("scroll", handleScroll);
 

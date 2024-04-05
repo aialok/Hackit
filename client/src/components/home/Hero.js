@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import astro from "../../assets/astro.png";
 import ClockComp from "./ClockComp";
 import { Link } from "react-router-dom";
+import QuasarLogo from '../../assets/quasarNewLogo.png'
 const Hero = ({ setCustomVariants }) => {
   const [mousePosition,setMousePosition] = useState({
     x: 0,
@@ -75,13 +76,14 @@ const Hero = ({ setCustomVariants }) => {
         </motion.div>
       </div>
 
-      <div className=" bg-[rgba(26,21,5,0.6)] relative  w-[100%] h-[100vh] flex-col flex items-center justify-center ">
+      <div className=" bg-[rgba(26,21,5,0.6)] relative  w-[100%] h-screen flex-col flex items-center justify-center ">
         <span
           onMouseEnter={handleMouseEntered}
           onMouseLeave={handleMouseLeaved}
           className="hover-shadow text-slate-100 text z-10 hover:text-shadow-md"
         >
-          QUASAR
+          {/* QUASAR */}
+          <img src={QuasarLogo} alt="" className="w-[80%] max-w-[90%] mx-auto"/>
         </span>
         <ClockComp setCustomVariants={setCustomVariants} />
         <Link

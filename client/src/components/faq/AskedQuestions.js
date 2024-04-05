@@ -22,7 +22,7 @@ const AskedQuestions = () => {
     {
       question: "How can we get the updates?",
       answer:
-        "We strongly recommend that you keep an eye on the official event website I.e. https://houseofhackers.tech all the updates would be consistently posted here.",
+        "We strongly recommend that you keep an eye on the official event website I.e. https://quasar-iiitr.vercel.app/ all the updates would be consistently posted here.",
       id: 2,
     },
     {

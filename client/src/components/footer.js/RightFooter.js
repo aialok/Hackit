@@ -1,4 +1,4 @@
-import { BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BsInstagram } from "react-icons/bs";
 import { BsTwitter } from "react-icons/bs";
 import { BsDiscord } from "react-icons/bs";
@@ -11,33 +11,27 @@ const RightFooter = () => {
         STAY CONNECTED
       </h2>
       <div className="flex mt-3">
-        <Link
-          target={"_blank"}
-          to={"https://instagram.com/house.of.hackers?igshid=ZDdkNTZiNTM="}
-        >
+        <Link target={"_blank"} to={"https://www.instagram.com/hg.iiitranchi/"}>
           <BsInstagram className="mx-2 text-3xl insta text-[#C64A92] cursor-pointer" />
         </Link>
-        <Link
-          target={"_blank"}
-          to={
-            "https://twitter.com/_houseofhackers?t=HmP1Lo-xbLBiT8obO_9raQ&s=09"
-          }
-        >
+        <Link target={"_blank"} to={"https://twitter.com/_houseofgeeks/"}>
           <BsTwitter className="mx-2 text-3xl text-[#1E9BEB] cursor-pointer" />
         </Link>
-        <Link to={"https://discord.gg/QwVfq3n7"} target="_blank">
+        {/* <Link to={"https://discord.gg/QwVfq3n7"} target="_blank">
           <BsDiscord className="mx-2 text-3xl text-[#5562EA] cursor-pointer" />
-        </Link>
-        <Link to={"http://nas.io/devs-dungeon"} target="_blank">
+        </Link> */}
+        {/* <Link to={"http://nas.io/devs-dungeon"} target="_blank">
           <BsWhatsapp className="mx-2 text-3xl text-[#25D366] cursor-pointer" />
-        </Link>
+        </Link> */}
         <Link
-          to={
-            "https://www.linkedin.com/feed/update/urn:li:activity:7049339230203822081/"
-          }
+          to={"https://www.linkedin.com/company/hgiiitranchi/"}
           target="_blank"
         >
           <BsLinkedin className="mx-2 text-3xl text-[#0077B5] cursor-pointer" />
+        </Link>
+
+        <Link to={"https://github.com/houseofgeeks"} target="_blank">
+          <BsGithub className="mx-2 text-3xl text-[#0077B5] cursor-pointer" />
         </Link>
       </div>
     </div>

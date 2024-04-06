@@ -15,7 +15,7 @@ const Sponsor = () => {
           </p>
           <div className="flex justify-center items-center">
             <a
-              href="https://drive.google.com/file/d/10Ak9OOfcB7OTiMILPFNNHKiLjIZgYZKT/view"
+              href="https://drive.google.com/file/d/17H41WFZ74wK1rQ-qQYhXfG952XEJS7Ck/view?usp=sharing"
               target="_blank"
             >
               <button className="fold-btn mt-4 font-[Varela]">

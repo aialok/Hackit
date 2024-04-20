@@ -9,7 +9,7 @@ const ClockComp = ({ setCustomVariants }) => {
 
   let interval;
   const startTimer = () => {
-    const countDownDate = new Date("April 20,2024").getTime();
+    const countDownDate = new Date("April 21,2024").getTime();
 
     interval = setInterval(() => {
       const now = new Date().getTime();

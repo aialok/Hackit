@@ -18,7 +18,7 @@ const ClockComp = ({ setCustomVariants }) => {
       const days = Math.floor(distance / (24 * 60 * 60 * 1000));
       const hours = Math.floor(
         (distance % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)
-      );
+      )+10;
       const minutes = Math.floor((distance % (60 * 60 * 1000)) / (1000 * 60));
       const seconds = Math.floor((distance % (60 * 1000)) / 1000);
 
@@ -42,7 +42,7 @@ const ClockComp = ({ setCustomVariants }) => {
     console.log("Timer started");
   }, []);
 
-  return (
+  return (  
     <div className="md:mt-2 mt-4 z-10">
       <Clock
         setCustomVariants={setCustomVariants}
